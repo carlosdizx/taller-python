@@ -5,4 +5,4 @@ def factorial(numero):
         return numero * factorial(numero - 1)
 
 
-print(factorial(5))
+print(f'Resultado: {factorial(5)}')
