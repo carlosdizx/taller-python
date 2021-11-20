@@ -1,5 +1,7 @@
 def calcular_total(pago, impuesto):
-    print(pago + pago * impuesto / 100)
+    print(f'Total a pagar: {pago + pago * impuesto}')
 
 
-calcular_total(1000, 16)
+pago = int(input("Valor del pago sin pago sin inpuesto: "))
+inpuesto = float(input("Valor del inpuesto: ")) / 100
+calcular_total(pago, inpuesto)
