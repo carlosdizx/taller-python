@@ -1,11 +1,5 @@
-def impresion(numero):
-    if numero <= 0:
-        return
-    if numero == 1:
-        print(1)
-    else:
-        print(numero)
-        return impresion(numero - 1)
+def calcular_total(pago, impuesto):
+    print(pago + pago * impuesto / 100)
 
 
-impresion(10)
+calcular_total(1000, 16)
