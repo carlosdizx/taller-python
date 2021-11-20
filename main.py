@@ -1,7 +1,13 @@
-def calcular_total(pago, impuesto):
-    print(f'Total a pagar: {pago + pago * impuesto}')
+def celsius_fahrenheit(celcius):
+    print(f'{celcius}°C = {celcius * 9 / 5 + 32}°F')
 
 
-pago = int(input("Valor del pago sin pago sin inpuesto: "))
-inpuesto = float(input("Valor del inpuesto: ")) / 100
-calcular_total(pago, inpuesto)
+def fahrenheit_celsius(fahrenheit):
+    print(f'{fahrenheit}°F = {(fahrenheit - 32) * 5 / 9}°C')
+
+
+celcius = float(input("Ingrese la temperatura en °C: "))
+celsius_fahrenheit(celcius)
+
+fahrenheit = float(input("Ingrese la temperatura en °F: "))
+fahrenheit_celsius(fahrenheit)
