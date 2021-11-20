@@ -1,8 +1,11 @@
-def factorial(numero):
+def impresion(numero):
+    if numero <= 0:
+        return
     if numero == 1:
-        return 1
+        print(1)
     else:
-        return numero * factorial(numero - 1)
+        print(numero)
+        return impresion(numero - 1)
 
 
-print(f'Resultado: {factorial(5)}')
+impresion(10)
